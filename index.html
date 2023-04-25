@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronic diseases analysis</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-bullseye icon'></i>
+            <!-- <i class='bx bxl-c-plus-plus icon'></i> -->
+            <div class="logo_name">Synopsis</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <!-- <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li> -->
+            <li>
+                <a href="#intro">
+                    <!-- <i class='bx bx-grid-alt'></i> -->
+                    <i>1</i>
+                    <span class="links_name">Introduction</span>
+                </a>
+                <span class="tooltip">Introduction</span>
+            </li>
+            <li>
+                <a href="#DU">
+                    <!-- <i class='bx bx-grid-alt'></i> -->
+                    <i>2</i>
+                    <span class="links_name">Data Understanding</span>
+                </a>
+                <span class="tooltip">Data Understanding</span>
+            </li>
+            <li>
+                <a href="#DP">
+                    <!-- <i class='bx bx-grid-alt'></i> -->
+                    <i>3</i>
+                    <span class="links_name">Data Preparation</span>
+                </a>
+                <span class="tooltip">Data Preparation</span>
+            </li>
+            <li>
+                <a href="#EDA">
+                    <!-- <i class='bx bx-grid-alt'></i> -->
+                    <i>4</i>
+                    <span class="links_name">EDA</span>
+                </a>
+                <span class="tooltip">Exploratory Data Analysis</span>
+            </li>
+            <!-- <li>
+                <a href="#Deploy">
+                    <i class='bx bx-grid-alt'></i>
+                    <i>5</i>
+                    <span class="links_name">Deployment</span>
+                </a>
+                <span class="tooltip">Deployment</span>
+            </li> -->
+            <li>
+                <a href="#con">
+                    <!-- <i class='bx bx-grid-alt'></i> -->
+                    <i>5</i>
+                    <span class="links_name">Conclusion</span>
+                </a>
+                <span class="tooltip">Conclusion</span>
+            </li>
+            <li>
+                <a href="#FE">
+                    <!-- <i class='bx bx-grid-alt'></i> -->
+                    <i>6</i>
+                    <span class="links_name">Future Enhancement</span>
+                </a>
+                <span class="tooltip">Future Enhancement</span>
+            </li>
+            <li>
+                <a href="#REF">
+                    <!-- <i class='bx bx-grid-alt'></i> -->
+                    <i>7</i>
+                    <span class="links_name">Reference</span>
+                </a>
+                <span class="tooltip">Reference</span>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <h1 class="heading"><u>U.S Chronic Disease Analysis</u></h1>
+        <br>
+        <div class="text" id="intro">1. Introduction</div>
+        <h4 class="sub-heading"><i>1.1 Scope of analysis</i></h4>
+        <p>
+            A chronic condition is a health condition or disease that is persistent or otherwise long-lasting in its
+            effects or a disease that comes with time. The term "chronic" is often applied when the course of the
+            disease lasts for more than three months. Common chronic diseases include diabetes, functional
+            gastrointestinal disorder, eczema, arthritis, asthma, cancer, chronic obstructive pulmonary disease, Lyme
+            disease, autoimmune diseases, genetic disorders and some viral diseases such as hepatitis C and acquired
+            immunodeficiency syndrome. An illness which is lifelong because it ends in death is a terminal illness.</p>
+
+        <p>63% of all deaths worldwide are from chronic conditions. Chronic diseases constitute a major cause of
+            mortality, and the World Health Organization (WHO) attributes 38 million deaths a year to non-communicable
+            diseases. In the United States approximately 40% of adults have at least two chronic conditions. Living with
+            two or more chronic conditions is referred to as multimorbidity.</p>
+
+        <p>While risk factors vary with age and gender, most of the common chronic diseases in the US are caused by
+            dietary, lifestyle and metabolic risk factors that are also responsible for the resulting mortality.
+            Therefore, these conditions might be prevented by behavioral changes, such as quitting smoking, adopting a
+            healthy diet, and increasing physical activity. Social determinants are important risk factors for chronic
+            diseases. Social factors, e.g., socioeconomic status, education level, and race/ethnicity, are a major cause
+            for the disparities observed in the care of chronic disease. Lack of access and delay in receiving care
+            result in worse outcomes for patients from minorities and underserved populations. Those barriers to medical
+            care complicate patients monitoring and continuity in treatment.</p>
+
+        <p>In the US, Minorities and low-income populations are less likely to access and receive preventive services
+            necessary to detect conditions at an early stage. The majority of US health care and economic costs
+            associated with medical conditions are for the costs of chronic diseases and conditions and associated
+            health risk behaviors. Eighty-four percent of all health care spending in 2006 was for the 50% of the
+            population who have one or more chronic medical conditions (CDC, 2014). There are several psychosocial risk
+            and resistance factors among children with chronic illness and their family members. Adults with chronic
+            illness were significantly more likely to report life dissatisfaction than those without chronic illness.
+            Compared to their healthy peers, children with chronic illness have about a twofold increase in psychiatric
+            disorders. Higher parental depression and other family stressors predicted more problems among patients. In
+            addition, sibling problems along with the burden of illness on the family as a whole led to more
+            psychological strain on the patients and their families.
+        </p>
+        <h4 class="sub-heading"><i>1.1.1 Impact on personal and social life</i></h4>
+        <h4 class="sub-heading">I. Mental Health:</h4>
+        <p>Specifically, the connection between loneliness and health and chronic condition has recently been
+            highlighted. Some studies have shown that loneliness has detrimental health effects similar to that of
+            smoking and obesity. One study found that feelings of isolation are associated with higher self-reporting of
+            health as poor, and feelings of loneliness increased the likelihood of mental health disorders in
+            individuals. The connection between chronic illness and loneliness is established, yet oftentimes ignored in
+            treatment. One study for example found that a greater number of chronic illnesses per individual were
+            associated with feelings of loneliness. Some of the possible reasons for this listed are an inability to
+            maintain independence as well as the chronic illness being a source of stress for the individual. A study of
+            loneliness in adults over age 65 found that low levels of loneliness as well as high levels of familial
+            support were associated with better outcomes of multiple chronic conditions such as hypertension and
+            diabetes.</p>
+        <h4 class="sub-heading">II. Financial Cost:</h4>
+        <p>People with chronic conditions pay more out-of-pocket; a study of the United States found that people spent
+            $2,243 more on average. The financial burden can increase medication non adherence. In some countries, laws
+            protect patients with chronic conditions from excessive financial responsibility; for example, as of 2008
+            France limited copayments for those with chronic conditions, and Germany limits cost sharing to 1% of income
+            versus 2% for the general public. Within the medical industrial complex, chronic illnesses can impact the
+            relationship between pharmaceutical companies and people with chronic conditions. Life-saving drugs, or
+            life-extending drugs, can be inflated for a profit. There is little regulation on the cost of chronic
+            illness drugs, which suggests that abusing the lack of a drug cap can create a large market for drug
+            revenue. Likewise, certain chronic conditions can last throughout one's lifetime and create pathways for
+            pharmaceutical companies to take advantage of this.</p>
+        <h4 class="sub-heading">III. Socioeconomic Class and Race:</h4>
+        <p>Race is also allegedly implicated in chronic illness, although there may be many other factors involved.
+            Racial minorities are 1.5-2 times more likely to have most chronic diseases than white individuals.
+            Non-Hispanic blacks are 40% more likely to have high blood pressure that non-Hispanic whites, diagnosed
+            diabetes is 77% higher among non-Hispanic blacks, and American Indians and Alaska Natives are 60% more
+            likely to be obese than non-Hispanic whites. Some of this prevalence has been suggested to be in part from
+            environmental racism. Flint, Michigan, for example, had high levels of lead poisoning in their drinkable
+            water after waste was dumped into low-value housing areas. There are also higher rates of asthma in children
+            who live in lower income areas due to an abundance of pollutants being released on a much larger scale in
+            these areas.</p>
+        <h4 class="sub-heading"><i>1.2 Overview</i></h4>
+        <h4 class="sub-heading">1.2.1 Reports:</h4>
+        <ul class="bullet-point">
+            <li>Six in ten adults in the US have a chronic disease and four in ten adults have two or more</li>
+            <li>They are also leading drivers of the nation’s $4.1 trillion in annual health care costs.</li>
+            <li><b>Heart</b> - Nothing kills more Americans than heart disease and stroke. More than 877,500 Americans
+                die of heart disease or stroke every year—that’s one-third of all deaths. These diseases take an
+                economic toll, as well, costing our health care system 216 billion dollar per year and causing $147
+                billion in lost productivity on the job.</li>
+            <li><b>Cancer</b> - Each year in the United States, more than 1.7 million people are diagnosed with cancer,
+                and almost 600,000 die from it, making it the second leading cause of death. The cost of cancer care
+                continues to rise and is expected to reach more than $240 billion by 2030.</li>
+            <li><b>Arthritis</b> - Arthritis affects 58.5 million adults in the United States, which is about 1 in 4
+                adults. It is a leading cause of work disability in the United States, one of the most common chronic
+                conditions, and a common cause of chronic pain. The total cost attributable to arthritis and related
+                conditions was about 303.5 billion dollar in 2013. Of this amount, nearly 140 billion dollar was for
+                medical costs and $164 billion was for indirect costs associated with lost earnings.</li>
+            <li><b>Alzheimer’s disease</b> - Alzheimer’s disease, a type of dementia, is an irreversible, progressive
+                brain disease that affects about 5.7 million Americans, including 1 in 10 adults aged 65 and older. It
+                is the sixth leading cause of death among all adults and the fifth leading cause for those aged 65 or
+                older. In 2020, the estimated cost of caring for and treating people with Alzheimer’s disease was 305
+                billion dollar. By 2050, these costs are projected to be more than $1.1 trillion.</li>
+        </ul>
+        <!-- <h4 class="sub-heading">1.2.2 Reason behind why I took this Dataset:</h4>
+        <ul class="bullet-point">
+            <li>In this modern world on my view health and medical is more important to develop a community or nation
+                economy So I give prioritize to medical industry and I like to analysis on medical data which may help
+                me to understand about the people health condition.</li>
+            <li>Now a days chronic diseases is the challenging for medical industry, So I thought that by doing analysis
+                on that may help doctors to understand and predict their patients.</li>
+            <li>If the person being healthy then it helps his personal and social life and also for a country growth.
+            </li>
+            <li>chronic diseases are usually not curable. That makes me attracts to choose this dataset</li>
+        </ul> -->
+        <h4 class="sub-heading"><i>1.3 Source of the Data</i></h4>
+        <p>The dataset was taken from Centers for Disease Control and prevention government agency under U.S. Department
+            of Health and Human Services . The dataset was updated on 30th January 2023. It is public license. It
+            contains 1.19M observations and 34 features (YearStart, YearEnd, LocationAbbr, LocationDesc, DataSource,
+            Topic, Question, Response, DataValueUnit, DataValueType, DataValue, DataValueAlt, DataValueFootnoteSymbol,
+            DatavalueFootnote, LowConfidenceLimit, HighConfidenceLimit, StratificationCategory1, Stratification1,
+            StratificationCategory2, Stratification2, StratificationCategory3, Stratification3, GeoLocation, ResponseID,
+            LocationID, TopicID, QuestionID, DataValueTypeID, StratificationCategoryID1, StratificationID1,
+            StratificationCategoryID2, StratificationID2, StratificationCategoryID3, StratificationID3). I don’t have
+            target variable in my data So I’m going with prescriptive analysis.</p>
+
+        <div class="text" id="DU">2. Data Understanding</div>
+        <h4 class="sub-heading"><i>2.1 Dataset</i> </h4>
+        <ul class="bullet-point">
+            <li>US chronic Diseases</li>
+        </ul>
+        <img class="img1" src="./img/DU_1.png" alt="main data">
+
+        <h4 class="sub-heading"><i>2.2 Gathering Data</i></h4>
+        <h4 class="sub-heading"><u>Load the relevant packages</u></h4>
+        <img src="./img/DU_2.png" alt="load packages">
+        <h4 class="sub-heading"><u>Load Dataset</u></h4>
+        <img class="img1" src="./img/DU_3.png" alt="load data">
+        <h4 class="sub-heading"><u>Observations and Features</u></h4>
+        <img src="./img/DU_4.png" alt="Shape of the data">
+        <h4 class="sub-heading"><u>Features names</u></h4>
+        <img class="img1" src="./img/DU_5.png" alt="Name of the column">
+        <h4 class="sub-heading"><u>Head of the dataset</u></h4>
+        <p class="DU_Para">This function defaults to printing the first 5 rows in the chronic diseases data set.</p>
+        <img class="img1" src="./img/DU_6.png" alt="Head of the data">
+        <h4 class="sub-heading"><u>Tail of the dataset</u></h4>
+        <p class="DU_Para">The except this function prints the end of the data frame. In this case, we’ve called the
+            last 5 observations.</p>
+        <img class="img1" src="./img/DU_7.png" alt="tail of the dataset">
+        <h4 class="sub-heading"><u>Structure of the dataset</u></h4>
+        <p class="DU_Para">The structure of the Chronic disease data set also tells us the number of rows (observations)
+            and columns (variables), but it provides even more information.</p>
+        <img src="./img/DU_8.png" alt="Structure of the dataset">
+
+        <h4 class="sub-heading"><i>2.3 Data Description</i></h4>
+        <p class="sub-heading">This data frame contains the following columns:</p>
+        <ol class="bullet-point">
+            <li><b>YearStart & YearEnd</b> - gives the time period of the disease occurs.</li>
+            <li><b>LocationAbbr</b> - It is the abbreviation of the location around United States.</li>
+            <li><b>LocationDesc</b> - It defines city names in United States.</li>
+            <li><b>DataSource</b> - It is about where the data is collected from?</li>
+            <li><b>Topic</b> - The chronic diseases in category.</li>
+            <li><b>Question</b> - About diseases description (Most of the diseases are about mortal people).</li>
+            <li><b>DataValueUnit</b> - units of values of the mortal disease people.</li>
+            <li><b>DataValueType</b> - It is about the type of value measured.</li>
+            <li><b>DataValue</b> - Count of people who died on that particular disease.</li>
+            <li><b>DataValueAlt</b> - As same as DataValue.</li>
+            <li><b>DataValueFootnoteSymbol</b> - It has symbols as Id for Datavalue notes.</li>
+            <li><b>DataValueFootnote</b> - Additional information about the data value.</li>
+            <li><b>LowConfidenceLimit & HighConfidenceLimit</b> - Range for that topic which has relationship with data
+                Value points.</li>
+            <li><b>StratificationCategory1</b> - Category of people by their appearance.</li>
+            <li><b>Stratification1</b> - sub-category for StratificationCategory1.</li>
+            <li><b>GeoLocation</b> - Location point for Cities in United States (Latitude and Longitude).</li>
+            <li><b>LocationID</b> - Unique identifier for location scale from 1.</li>
+            <li><b>TopicID</b> - Unique identifier for diseases.</li>
+            <li><b>QuestionID</b> - Unique identifier for disease description.</li>
+            <li><b>DataValueTypeID</b> - Unique identifier for Data value type.</li>
+            <li><b>StratificationCategoryID1</b> - Unique identifier for human category.</li>
+            <li><b>StratificationID1</b> - Unique identifier for sub-category of StratificationCategory.</li>
+        </ol>
+        <p>Initially there are 34 features. But some features are empty(data is not filled). So, I deleted those 10
+            features</p>
+        <p><b>StratificationID3, StratificationCategoryID3, StratificationID2, StratificationCategoryID2, ResponseID,
+                Stratification3, StratificationCategory2, Stratification2, StratificationCategory3, Response</b></p>
+        <!-- <h4 class="sub-heading">2.2.1 Diseases Description(Topic Column)</h4>
+        <p>It is ordered from highest to lowest diseases count in that time period (2001 – 2021).</p>
+        <ol class="bullet-point">
+            <li><b>Cancer:</b> <br> <br>
+                <span class="dis_des">Cancer is a broad term given to a collection of related diseases characterized by
+                    the abnormal growth and division of cells that leads to the destruction of other healthy cells in
+                    the body. Cancer cells have the ability to multiply and spread from one organ to another in the
+                    human body. Most cancers are detected at the age of 55 and older, but cancer can be detected at any
+                    age.</span> <br><br>
+                <span><b><i><u>Symptoms:</u></i></b></span>
+                <ul class="bullet-point">
+                    <li>Extreme fatigue</li>
+                    <li>Unexplained weight loss</li>
+                    <li>Fever and night sweats</li>
+                    <li>Skin changes, such as redness, swelling, discoloration,developing lumps under the skin, or
+                        changes to existing moles or warts.</li>
+                    <li>Changes in bowel habits such as constipation and diarrhea</li>
+                    <li>Persistent coughing</li>
+                    <li>Persistent pain in the joints and muscles</li>
+                    <li>Unexplained secretions or bleeding.</li>
+                </ul>
+            </li>
+            <li><b>Diabetes:</b> <br> <br>
+                <span>Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin
+                    or when the body cannot effectively use the insulin it produces, which may cause blood sugar levels
+                    to rise or drop beyond the normal range.</span> <br><br>
+                <span><b><i><u>Types of Diabetes:</u></i></b></span> <br> <br>
+                <span><b><i><u>Type 1 Diabetes: </u></i></b></span> <br> <br>
+                <span>Type 1 diabetes is a chronic condition that causes the insulin producing beta cells in the
+                    pancreas to be destroyed, preventing the body from being able to produce enough insulin. For this
+                    reason, type 1 diabetes patients will be dependent on external sources of insulin throughout their
+                    lifetime. People who have type 1 diabetes may also have nausea, vomiting, or stomach pains. Type 1
+                    diabetes symptoms can develop in just a few weeks or months and can be severe. Type 1 diabetes
+                    usually starts when you’re a child, teen, or young adult but can happen at any age.</span> <br><br>
+                <span><b><i><u>Type 2 Diabetes: </u></i></b></span> <br> <br>
+                <span>Type 2 diabetes is a chronic condition where the body either resists the effects of insulin or
+                    doesn't produce enough insulin to maintain normal blood sugar levels. Type 2 diabetes symptoms often
+                    take several years to develop. Some people don’t notice any symptoms at all. Type 2 diabetes usually
+                    starts when you’re an adult, though more and more children and teens are developing it. Because
+                    symptoms are hard to spot, it’s important to know the risk factors for type 2 diabetes. Make sure to
+                    visit your doctor if you have any of them.</span> <br><br>
+                <span><b><i><u>Gestational Diabetes: </u></i></b></span> <br> <br>
+                <span>Gestational diabetes is any change in blood sugar levels that is diagnosed for the first-time
+                    during pregnancy, regardless if the condition continues after childbirth or not. Gestational
+                    diabetes (diabetes during pregnancy) usually doesn’t have any symptoms. If you’re pregnant, your
+                    doctor should test you for gestational diabetes between 24 and 28 weeks of pregnancy. If needed, you
+                    can make changes to protect your health and your baby’s health.</span>
+            </li>
+            <li><b>Cardiovascular Disease:</b> <br> <br>
+                <span>Cardiovascular disease is a group of diseases affecting your heart and blood vessels. These
+                    diseases can affect one or many parts of your heart and/or blood vessels. A person may be
+                    symptomatic (physically experiencing the disease) or asymptomatic (not feeling anything at
+                    all).</span> <br>
+                <span>Cardiovascular disease includes heart or blood vessel issues, including:</span>
+                <ul class="bullet-point">
+                    <li>Narrowing of the blood vessels in your heart, other organs or throughout your body.</li>
+                    <li>Heart and blood vessel problems present at birth.</li>
+                    <li>Heart valves that aren’t working right.</li>
+                    <li>Irregular heart rhythms.</li>
+                </ul>
+                <span><u>Symptoms of heart issues:</u></span> <br><br>
+                <span>Chest pain, Shortness of breath, Dizziness or fainting, Fatigue or exhaustion, Chest pressure,
+                    heaviness or discomfort, sometimes described as a “weight on the chest.”</span> <br><br>
+                <span><u>Symptoms of blockages in blood vessels throughout your body:</u></span> <br><br>
+                <span>Pain or cramps in your legs when you walk, Leg sores that aren’t healing, Cool or red skin on your
+                    legs, Swelling in your legs, Difficulty with talking, seeing or walking, Numbness in your face or a
+                    limb. This may be on only one side of your body.</span> <br><br>
+                <span><b><u>There are four main types of CVD:</u></b></span>
+                <ul class="bullet-point">
+                    <li><b>coronary heart disease (CHD)</b> - It occurs when your heart muscle's blood supply is blocked
+                        or interrupted by a build-up of fatty substances (atheroma) in the coronary arteries. If a
+                        coronary artery becomes completely blocked, it can cause a heart attack. This is a medical
+                        emergency.</li>
+                    <li><b>Stroke</b> - A stroke is a serious medical condition that occurs when the blood supply to the
+                        brain is disturbed. Like all organs, your brain needs a constant supply of oxygen and nutrients
+                        to function properly. This is provided by the blood, so if your blood flow is restricted or
+                        stopped, brain cells will begin to die. This can lead to brain damage and possibly death.</li>
+                    <li><b>peripheral arterial disease</b> - Peripheral arterial disease, also known as peripheral
+                        vascular disease, occurs when there is a blockage in the arteries to your limbs (usually your
+                        legs). The most common symptom of peripheral arterial disease is pain in your legs when walking.
+                        This is usually in one or both of your thighs, hips or calves. The pain can feel like cramp, a
+                        dull pain or a sensation of heaviness in the muscles of your legs. It usually comes and goes and
+                        gets worse during exercise that uses your legs, such as walking or climbing stairs.</li>
+                    <li><b>aortic disease</b> - The aorta is the largest blood vessel in the body. It carries blood from
+                        your heart to the rest of your body. The most common type of aortic disease is aortic aneurysm,
+                        which is where the wall of the aorta becomes weakened and bulges outwards. You will usually
+                        experience pain in your chest, back or abdomen (tummy).</li>
+                </ul>
+            </li>
+            <li><b>Chronic Obstructive Pulmonary Disease(COPD):</b> <br> <br>
+                <span>It is a common, preventable and treatable chronic lung disease which affects men and women
+                    worldwide. Abnormalities in the small airways of the lungs lead to limitation of airflow in and out
+                    of the lungs. Several processes cause the airways to become narrow. There may be destruction of
+                    parts of the lung, mucus blocking the airways, and inflammation and swelling of the airway lining.
+                    COPD is sometimes called emphysema or chronic bronchitis. Emphysema usually refers to destruction of
+                    the tiny air sacs at the end of the airways in the lungs. Chronic bronchitis refers to a chronic
+                    cough with the production of phlegm resulting from inflammation in the airways.</span> <br>
+                <span>Common symptoms of COPD develop from mid-life onwards, including:</span>
+                <ul class="bullet-point">
+                    <li>breathlessness or difficulty breathing</li>
+                    <li>chronic cough, often with phlegm</li>
+                    <li>tiredness.</li>
+                </ul>
+            </li>
+            <li><b>Asthma:</b> <br> <br>
+                <span>Asthma is a condition in which your airways narrow and swell and may produce extra mucus. This can
+                    make breathing difficult and trigger coughing, a whistling sound (wheezing) when you breathe out and
+                    shortness of breath. For some people, asthma is a minor nuisance. For others, it can be a major
+                    problem that interferes with daily activities and may lead to a life-threatening asthma attack.
+                    Asthma can't be cured, but its symptoms can be controlled. Because asthma often changes over time,
+                    it's important that you work with your doctor to track your signs and symptoms and adjust your
+                    treatment as needed.</span> <br>
+                <span>Asthma signs and symptoms include:</span>
+                <ul class="bullet-point">
+                    <li>Shortness of breath</li>
+                    <li>Chest tightness or pain</li>
+                    <li>Wheezing when exhaling, which is a common sign of asthma in children</li>
+                    <li>Trouble sleeping caused by shortness of breath, coughing or wheezing</li>
+                    <li>Coughing or wheezing attacks that are worsened by a respiratory virus, such as a cold or the flu
+                    </li>
+                </ul>
+                <span>Signs that your asthma is probably worsening include:</span>
+                <ul class="bullet-point">
+                    <li>Asthma signs and symptoms that are more frequent and bothersome</li>
+                    <li>Increasing difficulty breathing, as measured with a device used to check how well your lungs are
+                        working (peak flow meter)</li>
+                    <li>The need to use a quick-relief inhaler more often</li>
+                </ul>
+                <span>For some people, asthma signs and symptoms flare up in certain situations:</span>
+                <ul class="bullet-point">
+                    <li><b>Exercise-induced asthma</b> , which may be worse when the air is cold and dry
+                    </li>
+                    <li><b>Occupational asthma</b>, triggered by workplace irritants such as chemical fumes, gases or
+                        dust</li>
+                    <li><b>Allergy-induced asthma</b>, triggered by airborne substances, such as pollen, mold spores,
+                        cockroach waste, or particles of skin and dried saliva shed by pets (pet dander)</li>
+                </ul>
+            </li>
+            <li><b>Nutrition, Physical Activity, and Weight Status:</b> (Don’t have correct description in Web)</li>
+            <li><b>Arthritis:</b> <br> <br>
+                <span>Arthritis is a disease that affects your joints (areas where your bones meet and move). Arthritis
+                    usually involves inflammation or degeneration (breakdown) of your joints. These changes can cause
+                    pain when you use the joint.</span> <br>
+                <span>Arthritis is most common in the following areas of the body:</span>
+                <ul class="bullet-point">
+                    <li>Feet</li>
+                    <li>Hands</li>
+                    <li>Hips</li>
+                    <li>Knees</li>
+                    <li>Lower back</li>
+                </ul>
+                <span><u>Types of Arthritis:</u></span>
+                <ul class="bullet-point">
+                    <li><b>Osteoarthritis</b>, or “wear and tear” arthritis, which develops when joint cartilage breaks
+                        down from repeated stress. It’s the most common form of arthritis.</li>
+                    <li><b>Ankylosing spondylitis</b>, or arthritis of the spine (usually your lower back).</li>
+                    <li><b>Juvenile arthritis (JA)</b>, a disorder where the immune system attacks the tissue around
+                        joints. JA typically affects children 16 or younger.</li>
+                    <li><b>Gout</b>, a disease that causes hard crystals of uric acid to form in your joints.</li>
+                    <li><b>Psoriatic arthritis</b>, joint inflammation that develops in people with psoriasis
+                        (autoimmune disorder that causes skin irritation).</li>
+                    <li><b>Rheumatoid arthritis</b>, a disease that causes the immune system to attack synovial
+                        membranes in your joints.</li>
+                </ul>
+                <span>Different types of arthritis have different symptoms. They can be mild in some people and severe
+                    in others. Joint discomfort might come and go, or it could stay constant. Common symptoms
+                    include:</span>
+                <ul class="bullet-point">
+                    <li>Pain.</li>
+                    <li>Redness.</li>
+                    <li>Stiffness.</li>
+                    <li>Swelling.</li>
+                    <li>Tenderness.</li>
+                    <li>Warmth.</li>
+                </ul>
+            </li>
+            <li><b>Overarching Conditions: </b> (Don’t have correct description in Web)</li>
+            <li><b>Alcohol:</b> <br> <br>
+                <span>Alcoholism, also called alcohol use disorder, is using alcohol in excessive amounts and being
+                    unable to control one’s use of alcohol. Someone who has an alcohol use disorder isn’t able to manage
+                    their drinking. Alcohol use disorder may be characterized as mild, moderate or severe, and every
+                    category has its own symptoms and side effects. Alcohol use disorder was previously broken into two
+                    categories by the medical community: abuse and dependence. It’s now measured on a spectrum.
+                    Depending on the number of criteria a person meets, they can be diagnosed as having a mild to severe
+                    alcohol use disorder. Some of the alcoholic diagnosis criteria include having a craving to use
+                    alcohol, drinking more than intended or continuing to use alcohol despite problems in relationships.
+                    Research shows that alcohol use disorder often co-occurs with other mental health disorders,
+                    including bipolar disorder and major depression.</span><br><br>
+                <span>Alcoholism and alcohol abuse are serious problems in the U.S. In 2019, 14.5 million adults had
+                    alcohol use disorder, with only 7.9% receiving treatment. Another 401,000 teens aged 12 to 17 had an
+                    alcohol use disorder.</span><br>
+                <span>The following risk factors contribute to alcohol use disorder:</span>
+                <ul class="bullet-point">
+                    <li>Drinking prior to age 15</li>
+                    <li>Genetics and family history</li>
+                    <li>Mental health disorders and history of trauma</li>
+                    <li>Heavy alcohol use and binge drinking</li>
+                </ul>
+                <span>Alcoholism typically becomes a disease when:</span>
+                <ul class="bullet-point">
+                    <li>You try to stop and can’t.</li>
+                    <li>You continue despite sometimes extremely adverse outcomes.</li>
+                    <li>You have a physical dependence on alcohol and experience withdrawal if you try to stop.</li>
+                </ul>
+                <span>Alcoholism is considered a chronic disease for several reasons. It has some elements of
+                    heritability, meaning there are genetic components that can run in families. Environmental factors
+                    are also part of the equation. Consider diabetes, another chronic disease. Whether or not you
+                    develop diabetes is based on a combination of your family’s genes and your personal lifestyle
+                    choices, like diet and exercise. Alcoholism is similar. You may be genetically more predisposed to
+                    developing alcoholism if you have a family member or ancestor who had an alcohol addiction. Growing
+                    up in an environment where alcohol is prevalent contributes to this risk. The environmental risk
+                    factors and genetics work together and determine the course of the disease. Like other chronic
+                    diseases, alcoholism can be identified and diagnosed based on certain symptoms and can be managed
+                    with professional treatment. Treatment options often include a combination of medications, therapy
+                    and cognitive behavioural treatment in inpatient and outpatient settings. When alcoholism and other
+                    chronic diseases aren’t being properly treated and managed, relapse is possible. While you can’t
+                    necessarily cure diabetes, you can keep it under control with medications and lifestyle choices like
+                    exercise and a healthy diet. If you stopped doing these things, your diabetes would be out of
+                    control, and there would be adverse consequences.</span>
+            </li>
+            <li><b>Tobacco:</b> <br> <br>
+                <span>Tobacco use is the leading cause of preventable disease, disability, and death in the United
+                    States. Every day in the United States, about 1,600 young people under age 18 try their first
+                    cigarette, and nearly 200 end up smoking cigarettes daily.</span><br><br>
+                <span>Cigarette smoking leads to disease and disability and harms nearly every organ of the body.
+                    Smoking causes cancer, heart disease, stroke, lung diseases, type 2 diabetes, and other chronic
+                    health conditions. The impact also extends beyond the person who smokes. For example, smoking during
+                    pregnancy increases the risk of premature birth (being born too early) and sudden infant death
+                    syndrome (SIDS). Second-hand smoke, which affects 58 million Americans who don’t smoke, also causes
+                    stroke, lung cancer, and heart disease in adults. Children who are exposed to second-hand smoke are
+                    at increased risk of SIDS, impaired lung function, acute respiratory infections, middle ear disease,
+                    and more frequent and severe asthma attacks.</span><br><br>
+                <span><b>Cancer:</b><br><br> Cigarette smoking causes several forms of cancer, including about 80% to
+                    90% of lung cancer deaths. People who don’t smoke can also develop lung cancer, and those who are
+                    exposed to second-hand smoke at home or work have a 20% to 30% higher risk of getting lung cancer
+                    than those not exposed. Smoking also causes cancers of the voice box (larynx), mouth and throat,
+                    esophagus, bladder, kidney, liver, pancreas, cervix, colon, rectum, and stomach, as well as a type
+                    of blood cancer called acute myeloid leukemia. It can also interfere with cancer treatment,
+                    increasing the risk of recurrence, more serious complications, and death.</span><br><br>
+                <span><b>Heart Disease and Stroke:</b><br><br>Cigarette smoking is a major cause of heart disease and
+                    stroke and causes 1 in every 4 deaths from heart disease and stroke. People who don’t smoke but
+                    breathe second-hand smoke at home or work have a 25% to 30% higher risk of heart disease and a 20%
+                    to 30% higher risk of stroke. Smoking can damage the body by:</span>
+                <ul class="bullet-point">
+                    <li>Raising triglycerides (a type of fat in the blood) and lowering high-density lipoprotein (HDL)
+                        or “good” cholesterol.</li>
+                    <li>Making blood sticky and more likely to clot, which can block blood flow to the heart and brain.
+                    </li>
+                    <li>Damaging cells that line blood vessels, increasing the buildup of plaque (fat, cholesterol,
+                        calcium, and other substances) in blood vessels, and causing blood vessels to thicken and
+                        narrow.</li>
+                </ul>
+                <span><b>Lung Disease:</b><br><br>Cigarette smoking can cause lung disease by damaging the airways and
+                    the small air sacs (alveoli) found in the lungs. It can cause chronic obstructive pulmonary disease
+                    (COPD), which includes emphysema and chronic bronchitis. Smoking accounts for as many as 8 in 10
+                    COPD-related deaths. If you have asthma, tobacco smoke can trigger an asthma attack or make an
+                    attack worse.</span><br><br>
+                <span><b>Diabetes:</b><br><br> The risk of developing type 2 diabetes is 30% to 40% higher for current
+                    smokers
+                    than non-smokers. The more cigarettes a person smokes, the higher their risk of type 2 diabetes.
+                    People with diabetes who smoke are more likely than non-smokers to have trouble managing their blood
+                    sugar and to have serious complications, including:</span>
+                <ul class="bullet-point">
+                    <li>Heart disease and kidney disease.</li>
+                    <li>Poor blood flow in the legs and feet that can lead to infections, ulcers, and amputation
+                        (surgery to remove a body part, such as toes or feet).</li>
+                    <li>Retinopathy (an eye disease that can cause blindness).</li>
+                    <li>Peripheral neuropathy (nerve damage in the hands, arms, feet, and legs that causes numbness,
+                        pain, weakness, and poor coordination).</li>
+                </ul>
+            </li>
+            <li><b>Older Adults: </b> (Don’t have correct description in Web)</li>
+            <li><b>Chronic Kidney Disease:</b> <br> <br>
+                <span>Chronic kidney disease, also called chronic kidney failure, involves a gradual loss of kidney
+                    function. Your kidneys filter wastes and excess fluids from your blood, which are then removed in
+                    your urine. Advanced chronic kidney disease can cause dangerous levels of fluid, electrolytes and
+                    wastes to build up in your body. In the early stages of chronic kidney disease, you might have few
+                    signs or symptoms. You might not realize that you have kidney disease until the condition is
+                    advanced. Treatment for chronic kidney disease focuses on slowing the progression of kidney damage,
+                    usually by controlling the cause. But, even controlling the cause might not keep kidney damage from
+                    progressing. Chronic kidney disease can progress to end-stage kidney failure, which is fatal without
+                    artificial filtering (dialysis) or a kidney transplant.</span><br><br>
+                <span>Signs and symptoms of chronic kidney disease develop over time if kidney damage progresses slowly.
+                    Loss of kidney function can cause a buildup of fluid or body waste or electrolyte problems.
+                    Depending on how severe it is, loss of kidney function can cause : Nausea, Vomiting, Loss of
+                    appetite, Fatigue and weakness, Sleep problems, Urinating more or less, Decreased mental sharpness,
+                    Muscle cramps, Swelling of feet and ankles, Dry and itchy skin, High blood pressure (hypertension)
+                    that's difficult to control, Shortness of breath, if fluid builds up in the lungs, Chest pain, if
+                    fluid builds up around the lining of the heart.</span></li>
+            <li><b>Oral Health: </b> (Don’t have correct description in Web)</li>
+            <li><b>Mental Health:</b> <br> <br>
+                <span>Mental health includes our emotional, psychological, and social well-being. It affects how we
+                    think, feel, and act. It also helps determine how we handle stress, relate to others, and make
+                    healthy choices.1 Mental health is important at every stage of life, from childhood and adolescence
+                    through adulthood. Although the terms are often used interchangeably, poor mental health and mental
+                    illness are not the same. A person can experience poor mental health and not be diagnosed with a
+                    mental illness. Likewise, a person diagnosed with a mental illness can experience periods of
+                    physical, mental, and social well-being.</span><br>
+                <span>Mental illnesses are among the most common health conditions in the United States.</span>
+                <ul class="bullet-point">
+                    <li>More than 50% will be diagnosed with a mental illness or disorder at some point in their
+                        lifetime.</li>
+                    <li>1 in 5 Americans will experience a mental illness in a given year.</li>
+                    <li>1 in 5 children, either currently or at some point during their life, have had a seriously
+                        debilitating mental illness.</li>
+                    <li>1 in 25 Americans lives with a serious mental illness, such as schizophrenia, bipolar disorder,
+                        or major depression.</li>
+                </ul>
+                <span>There is no single cause for mental illness. A number of factors can contribute to risk for mental
+                    illness, such as</span>
+                <ul class="bullet-point">
+                    <li>Early adverse life experiences, such as trauma or a history of abuse (for example, child abuse,
+                        sexual assault, witnessing violence, etc.)
+                    </li>
+                    <li>Experiences related to other ongoing (chronic) medical conditions, such as cancer or diabetes
+                    </li>
+                    <li>Biological factors or chemical imbalances in the brain</li>
+                    <li>Use of alcohol or drugs</li>
+                    <li>Having feelings of loneliness or isolation</li>
+                </ul>
+            </li>
+            <li><b>Immunization: </b> (Don’t have correct description in Web)</li>
+            <li><b>Reproductive Health: </b> (Don’t have correct description in Web)</li>
+            <li><b>Disability: </b> (Don’t have correct description in Web)</li>
+        </ol> -->
+        <div class="text" id="DP">3. Data Preparation</div>
+        <h4 class="sub-heading"><i>3.1 Data Cleaning</i></h4>
+        <p>Data cleaning or data preparation is an essential part of statistical analysis. In this part mostly we are
+            checking the null values, inconsistency of data, and outliers. One of the biggest challenges when it comes
+            to utilizing Machine Learning data is Data Cleaning. Although data cleaning may not be mentioned too often,
+            it is very critical for the success of Machine Learning applications. This will help you to yield better
+            results from your machine learning functions. Also, remove duplicate categorization from your data list and
+            streamline your data. It is good to reduce the data you are handling. A downsized dataset can help you
+            generate more accurate results. The main aim of Data Cleaning is to identify and remove errors & duplicate
+            data, to create a reliable dataset. This improves the quality of the training data for analytics and enables
+            accurate decision-making. Data cleansing is a time-consuming process and most data scientists spend an
+            enormous amount of time enhancing the quality of the data. However, there are various methods to identify
+            and classify data for data cleansing.</p>
+        <p>The data set is an important asset in any data analysis and model-building process. Generally, 80% of the
+            time data scientists are utilized in data cleaning and manipulation, whereas 20% of the time are utilized in
+            analysis and modelling. ‘Data cleaning’ is the process of detecting and correcting (or removing) corrupt or
+            inaccurate records from a recordset, table, or database and refers to identifying incomplete, incorrect,
+            inaccurate, or irrelevant parts of the data and then replacing, modifying, or deleting the dirty or coarse
+            data. To perform the data analytics properly we need a variety of data cleaning methods. Data cleaning
+            depends on the type of data set. Data cleaning will help us to increase the accuracy of the model. The data
+            cleaning and validation steps undertaken for any data science project are implemented using a data pipeline.
+            Each stage in a data pipeline consumes input and produces output. The main advantage of the data pipeline is
+            that each step is small, self-contained, and easier to check. Some data pipeline systems also allow you to
+            resume the pipeline from the middle, thus, saving time. In this article, we will look at eight common steps
+            in the data cleaning process, as mentioned below. </p>
+        <ol class="bullet-point">
+            <li>Removing duplicates </li>
+            <li>Remove irrelevant data </li>
+            <li>Standardize capitalization </li>
+            <li>Convert data type </li>
+            <li>Handling outliers </li>
+            <li>Fix errors </li>
+            <li>Language Translation </li>
+            <li>Handle missing values</li>
+        </ol>
+        <h4 class="sub-heading"><i>3.2 Data cleaning process in CDC dataset</i></h4>
+        <p>Find the total null values</p> <br>
+        <img class="img1" src="./img/DP_1.png" alt="null_value_display">
+        <ul class="bullet-point">
+            <li>Here 10 columns have total null values (values are not available in that specific column)</li>
+        </ul>
+        <p>Removed those 10 columns</p> <br>
+        <img class="img1" src="./img/DP_2.png" alt="remove variables">
+        <ul class="bullet-point">
+            <li>I dropped those columns which doesn’t have values(empty columns)</li>
+        </ul>
+        <p>Find the Null values for whole Dataset</p> <br>
+        <img src="./img/DP_3.png" alt="find null value">
+        <ul class="bullet-point">
+            <li>Null imputation process for variables</li>
+        </ul>
+        <p><b><u>Geolocation:</u></b></p>
+        <p>GeoLocation is most important variable in my Dataset. Because it shows the map location which makes easy to
+            understand if we create map plot in EDA process</p> <br>
+        <img class="img1" src="./img/DP_4.png" alt="geolocation">
+        <ul class="bullet-point">
+            <li>I have 9196 NA values in GeoLocation variable</li>
+        </ul>
+        <img class="img1" src="./img/DP_5.png" alt="geolocation_info">
+        <ul class="bullet-point">
+            <li>I tried to find GeoLocation information to impute data</li>
+        </ul>
+        <img class="img1" src="./img/DP_6.png" alt="replace_US">
+        <ul class="bullet-point">
+            <li>Using excel I filtered and found that only United States have Null values in the data</li>
+            <li>I get the location from Web and I impute the values by using condition which filter US and impute the
+                value for those specific observations</li>
+        </ul>
+        <img class="img1" src="./img/DP_7.png" alt="finding duplicate values">
+        <ul class="bullet-point">
+            <li>I checked whether my dataset have any duplicate value and I got No as a result</li>
+        </ul>
+        <p><b><u>Topic:</u></b></p> <br>
+        <p>There are many categories of disease in Topic feature. I tried to shrink these categories which gives more
+            important on scale of incurable and high mortality and very challenging disease for this modern world</p>
+        <br>
+        <img src="./img/DP_8.png" alt="Topic value count">
+        <ul class="bullet-point">
+            <li>I listed the categories in Topic Variable(diseases names)</li>
+        </ul>
+        <img class="img1" src="./img/DP_9.png" alt="some topic category removed">
+        <ul class="bullet-point">
+            <li>
+                I dropped the categories in topic feature which is not important in my analysis compared to other. In
+                other term the diseases which is not prioritize and not much risk disease is removed to shrink the
+                observation which helps me to analyse easily and I can give much importance to that disease in my
+                analysis
+            </li>
+        </ul>
+        <img src="./img/DP_10.png" alt="cross verify topic category">
+        <ul class="bullet-point">
+            <li>On my view these are the 8 disease which our medical department doesn’t get any curable measures and
+                they struggle to get rid these diseases from the people</li>
+        </ul>
+        <p><b><u>DataValue:</u></b></p> <br>
+        <p>DataValue gives the count of people who affects in those particular diseases</p>
+        <img class="img1" src="./img/DP_11.png" alt="drop datavalue category">
+        <ul class="bullet-point">
+            <li>
+                These are the categories which doesn’t give meaning to that feature. It describes about the taxes and
+                liability of that observation but actually I don’t need that type of values in my analysis, So I removed
+                it from that field
+            </li>
+        </ul>
+        <img src="./img/DP_12.png" alt="cross verify dropped datavalue">
+        <ul class="bullet-point">
+            <li>Once again I cross verified whether the values I dropped is in my data</li>
+        </ul>
+        <img src="./img/DP_13.png" alt="dropped datavalue">
+        <ul class="bullet-point">
+            <li>DataValue has a datatype object because of the category we had before. even though I removed some
+                categories in DataValue it shows as object</li>
+        </ul>
+        <img class="img1" src="./img/DP_14.png" alt="convert category object to numeric">
+        <ul class="bullet-point">
+            <li>I convert the data type of DataValue from object to Float</li>
+        </ul>
+        <img class="img1" src="./img/DP_15.png" alt="compare datavalue and datavaluealt">
+        <ul class="bullet-point">
+            <li>I compared whether DataValue and DataValueAlt are same. The result I got is approx. 2L observations are
+                not equal</li>
+        </ul>
+        <img class="img1" src="./img/DP_16.png" alt="assign a variable to compare datavalue and datavaluealt">
+        <ul class="bullet-point">
+            <li>I created a new variable called NE to cross verify the DataValue and DataValueAlt</li>
+            <li>Using excel I filtered only not equal data from that I come to know that 80% of data are not available
+                in DataValue and for that observations DataValueAlt are denotes as “0”. Balance 20% of data are mismatch
+                because the last digit of DataValueAlt is not in DataValue</li>
+        </ul>
+        <img class="img1" src="./img/DP_17.png" alt="Drop datavaluealt and NE features">
+        <ul class="bullet-point">
+            <li>So, I came to the conclusion that both the features are same so I dropped DataValueAlt</li>
+            <li>NE is dropped because it is created only to check the DataValue and DataValueAlt</li>
+        </ul>
+        <p><b><u>Year:</u></b></p> <br>
+        <p>To make analysis simple I tried to shrink the data by year</p>
+        <img src="./img/DP_18.png" alt="Create a function to make year category">
+        <ul class="bullet-point">
+            <li>I created a user defined function to have a new column as year_category and impute the values as
+                category grouped values</li>
+        </ul>
+        <img src="./img/DP_19.png" alt="Manipulate year category">
+        <ul class="bullet-point">
+            <li>I split years(2001,2007-2021) as 3 categories(below 10, 11 to 15, above 16)</li>
+            <li>Store the category in their variable by using loc method</li>
+            <li>To cross verify the stored variable I used shape to see whether they are equal</li>
+            <li>I find NA for that variable</li>
+        </ul>
+        <img src="./img/DP_20.png" alt="Create a function for percentage of na">
+        <ul class="bullet-point">
+            <li>To understand NA value, I created a user defined function to make NA percentage for that created
+                variable</li>
+        </ul>
+        <img src="./img/DP_21.png" alt="Assign a variable for a specific category">
+        <ul class="bullet-point">
+            <li>I took above 16 for my further analysis. Even though it has more NA compare to others the only reason I
+                choose this category is because it is recent time period so that I can relate this to the real world
+            </li>
+        </ul>
+        <img src="./img/DP_22.png" alt="Value counts for YearStart">
+        <ul class="bullet-point">
+            <li>Now I have year from 2016 – 2020</li>
+            <li>So far I shrink the data from 1082328 observations to 307973 observations</li>
+        </ul>
+        <img class="img1" src="./img/DP_23.png" alt="compare YearStart and YearEnd and assign it to a variable">
+        <ul class="bullet-point">
+            <li>I compared whether YearStart and YearEnd are same or not for that I created a variable called check_year
+                because the processing time takes more. So, I stored and run that variable </li>
+        </ul>
+        <img class="img1" src="./img/DP_24.png" alt="Value count for the created variable">
+        <img class="img1" src="./img/DP_25.png" alt="Value count for the created variable">
+        <ul class="bullet-point">
+            <li>Both the features are same. So, I rename YearStart as Year and I dropped YearEnd, year_category,
+                check_year</li>
+            <li>year_category, check_year are created to check and compare the feature so I removed it</li>
+        </ul>
+        <img class="img1" src="./img/DP_26.png" alt="Check sum of datavalue null value">
+        <ul class="bullet-point">
+            <li>Now the DataValue is approx. 1.2Lakh</li>
+        </ul>
+        <img class="img1" src="./img/DP_27.png" alt="Fillna for datavalue">
+        <ul class="bullet-point">
+            <li>Replace NA value as 0 because there is no data available in such time period and if we replace NA's with
+                central tendency value then we may get impact on dataset and our analysis may go wrong with that
+                measurement</li>
+        </ul>
+        <p><b><u>DataValueUnit:</u></b></p> <br>
+        <p>I have 32564 null values in this feature. It denotes the unit measured for DataValue</p>
+        <img class="img1" src="./img/DP_28.png" alt="Value counts for datavalueunit">
+        <ul class="bullet-point">
+            <li>I checked the DataValueUnit and DataValueType categories count. To understand what are the categories
+                are there in that column</li>
+            <li>I created a new variable and I impute the data which has null value in DataValueUnit</li>
+            <li>For that I checked the DataValueType value count.</li>
+        </ul>
+        <img class="img1" src="./img/DP_29.png" alt="filtered datavalue & datavalueunit using condition">
+        <ul class="bullet-point">
+            <li>I filtered only DataValueType which has null value in DataValueUnit for my understanding about other
+                features in that specific condition</li>
+        </ul>
+        <img class="img1" src="./img/DP_30.png" alt="find total sum of na ">
+        <ul class="bullet-point">
+            <li>I dropped the local control of the regulation of alcohol outlet density from DataValueType because it is
+                not related to the DataValue. I need only person’s count on diseases for my analysis</li>
+            <li>So, for I got 32559 null values in DataValueUnit</li>
+        </ul>
+        <img class="img1" src="./img/DP_31.png" alt="replace the values in datavalueunit">
+        <img class="img1" src="./img/DP_32.png" alt="cross verify na in datavalueunit">
+        <ul class="bullet-point">
+            <li>To impute null values in DataValueUnit, I compared DataValueUnit with Questions and DataValueType. If
+                the condition checks other parameter and replace the value for that specific observation. Luckily I got
+                only number when compare other parameters so, I impute remining null values in DataValueUnit as Number.
+            </li>
+        </ul>
+        <p>Rename some features:</p> <br>
+        <img class="img1" src="./img/DP_33.png" alt="rename some features">
+        <ul class="bullet-point">
+            <li>I rename the features which doesn’t suits for that column. Topic as Diseases, StratificationCategory1 as
+                people_category, Stratification1 as people_subCategory</li>
+        </ul>
+        <p>Split Location points from Geolocation:</p> <br>
+        <p>While making map Geolocation values are not in that suitable format so I tried to split those points as
+            latitude and longitude in a separate feature</p> <br>
+        <img class="img1" src="./img/DP_34.png" alt="strip geo location">
+        <ul class="bullet-point">
+            <li>After strip and split GeoLocation, I got results in 3 columns. But now also it isn’t in correct format
+            </li>
+        </ul>
+        <img class="img1" src="./img/DP_35.png" alt="replace string geo location">
+        <ul class="bullet-point">
+            <li>So, I replace bracket in col1 as empty. Now I got it what I want</li>
+            <li>Created a new feature named latitude and I impute col1 data. Again, I created longitude and impute col2
+                data. After imputation I dropped Geolocation feature because now that values are in latitude and
+                longitude features</li>
+        </ul>
+        <p>Drop some feature:</p> <br>
+        <img class="img1" src="./img/DP_36.png" alt="Drop value using condition">
+        <img class="img1" src="./img/DP_37.png" alt="dataset Info">
+        <ul class="bullet-point">
+            <li>In LocationDesc all the values denote US states but some observation shows the United States as state so
+                I dropped United States from LocationDesc</li>
+            <li>I focus on diseases affected by people but some values in data tells us about the tax and liability of
+                alcohol consumption so I dropped those rows by $ in DataValueUnit</li>
+            <li>After imputation and removing value I got 305699 observation & 23 features</li>
+        </ul>
+        <p>Convert DataValueUnit to Percentage:</p> <br>
+        <p> Convert the units into one measurement it will be easy to interpret the results</p> <br>
+        <img class="img1" src="./img/DP_38.png" alt="Data value unit value counts">
+        <ul class="bullet-point">
+            <li>Here there are 7 types the measurements are taken. I decided to take percentage as common for all and it
+                is easy to convert the values</li>
+        </ul>
+        <img class="img1" src="./img/DP_39.png" alt="Display datavalueunit category">
+        <ul class="bullet-point">
+            <li>To cross verify the DataValueUnit. I took each type in DataValueUnit and display the total sum</li>
+        </ul>
+        <img class="img1" src="./img/DP_40.png" alt="Loop for replace a value based on condition">
+        <ul class="bullet-point">
+            <li>I created a for loop which convert every category in units to %</li>
+        </ul>
+        <img class="img1" src="./img/DP_41.png" alt="Datavalueunit value counts">
+        <ul class="bullet-point">
+            <li>I cross verified whether every unit type is converted to percentage</li>
+        </ul>
+        <img class="img1" src="./img/DP_42.png" alt="round off datavalue">
+        <ul class="bullet-point">
+            <li>To make easier I rounded the DataValue with 3 decimals</li>
+        </ul> <br> <br>
+        <ul class="bullet-point">
+            <li>DataValueFootnoteSymbol, DatavalueFootnote, LowConfidenceLimit, HighConfidenceLimit These are also
+                important feature but I can't impute null values because the null value occurs more so I didn't replace
+                and remove it in my dataset and I will not take this in my further analysis. If the data is present that
+                that feature then it may help in analysing the disease. So, in future we have to concentrate in this
+                part</li>
+        </ul>
+        <div class="text" id="EDA">4. Exploratory Data Analysis</div>
+        <h4 class="sub-heading"><i>4.1 Data Exploration</i></h4>
+        <p>Exploratory data analysis (EDA) is used by data scientists to analyse and investigate data sets and summarize
+            their main characteristics, often employing data visualization methods. It helps determine how best to
+            manipulate data sources to get the answers you need, making it easier for data scientists to discover
+            patterns, spot anomalies, test a hypothesis, or check assumptions.</p>
+        <p>EDA is primarily used to see what data can reveal beyond the formal modelling or hypothesis testing task and
+            provides a better understanding of data set variables and the relationships between them. It can also help
+            determine if the statistical techniques you are considering for data analysis are appropriate. Originally
+            developed by American mathematician John Tukey in the 1970s, EDA techniques continue to be a widely used
+            method in the data discovery process today.</p>
+        <p>The main purpose of EDA is to help look at data before making any assumptions. It can help identify obvious
+            errors, as well as better understand patterns within the data, detect outliers or anomalous events, find
+            interesting relations among the variables.</p>
+        <p>Data scientists can use exploratory analysis to ensure the results they produce are valid and applicable to
+            any desired business outcomes and goals. EDA also helps stakeholders by confirming they are asking the right
+            questions. EDA can help answer questions about standard deviations, categorical variables, and confidence
+            intervals. Once EDA is complete and insights are drawn, its features can then be used for more sophisticated
+            data analysis or modelling, including machine learning.</p>
+        <p>Specific statistical functions and techniques you can perform with EDA tools include:</p>
+        <ul class="bullet-point">
+            <li>Clustering and dimension reduction techniques, which help create graphical displays of high-dimensional
+                data containing many variables.</li>
+            <li>Univariate visualization of each field in the raw dataset, with summary statistics.</li>
+            <li>Bivariate visualizations and summary statistics that allow you to assess the relationship between each
+                variable in the dataset and the target variable you’re looking at.</li>
+            <li>Multivariate visualizations, for mapping and understanding interactions between different fields in the
+                data.</li>
+            <li>K-means Clustering is a clustering method in unsupervised learning where data points are assigned into K
+                groups, i.e., the number of clusters, based on the distance from each group’s centroid. The data points
+                closest to a particular centroid will be clustered under the same category. K-means Clustering is
+                commonly used in market segmentation, pattern recognition, and image compression.</li>
+            <li>Predictive models, such as linear regression, use statistics and data to predict outcomes.</li>
+        </ul>
+        <p>There are four primary types of EDA:</p>
+        <ul class="bullet-point">
+            <li><b>Univariate non-graphical.</b> This is the simplest form of data analysis, where the data being
+                analysed consists of just one variable. Since it’s a single variable, it doesn’t deal with causes or
+                relationships. The main purpose of univariate analysis is to describe the data and find patterns that
+                exist within it.</li>
+            <li><b>Univariate graphical.</b> Non-graphical methods don’t provide a full picture of the data. Graphical
+                methods
+                are therefore required. Common types of univariate graphics include: <ul class="bullet-point">
+                    <li>Stem-and-leaf plots, which show all data values and the shape of the distribution.</li>
+                    <li>Histograms, a bar plot in which each bar represents the frequency (count) or proportion
+                        (count/total count) of cases for a range of values.</li>
+                    <li>Box plots, which graphically depict the five-number summary of minimum, first quartile, median,
+                        third quartile, and maximum.</li>
+                </ul>
+            </li>
+            <li><b>Multivariate nongraphical:</b> Multivariate data arises from more than one variable. Multivariate
+                non-graphical EDA techniques generally show the relationship between two or more variables of the data
+                through cross-tabulation or statistics.</li>
+            <li><b>Multivariate graphical:</b> Multivariate data uses graphics to display relationships between two or
+                more sets of data. The most used graphic is a grouped bar plot or bar chart with each group representing
+                one level of one of the variables and each bar within a group representing the levels of the other
+                variable.</li>
+        </ul>
+        <p>Other common types of multivariate graphics include:</p>
+        <ul class="bullet-point">
+            <li>Scatter plot, which is used to plot data points on a horizontal and a vertical axis to show how much one
+                variable is affected by another.</li>
+            <li>Multivariate chart, which is a graphical representation of the relationships between factors and a
+                response.</li>
+            <li>Run chart, which is a line graph of data plotted over time.</li>
+            <li>Bubble chart, which is a data visualization that displays multiple circles (bubbles) in a
+                two-dimensional plot.</li>
+            <li>Heat map, which is a graphical representation of data where values are depicted by colour.</li>
+        </ul>
+        <h4 class="sub-heading"><i>4.2 Dashboard:</i></h4>
+        <div class='tableauPlaceholder text' id='viz1682388070509' style='position: relative'><noscript><a href='#'><img
+                        alt=' '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;de&#47;deploy_dashboard&#47;Dashboard1&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='deploy_dashboard&#47;Dashboard1' />
+                <param name='tabs' value='yes' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;de&#47;deploy_dashboard&#47;Dashboard1&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' /></object></div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1682388070509');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '850px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+        <div class="text" id="con">5. Conclusion</div>
+        <ul class="bullet-point">
+            <li>Humans health plays a major role in developing countries’ growth</li>
+            <li>It changes the whole economy of the country</li>
+            <li>If a person healthy then he will work for his needs from that cycle countries’ development also
+                improvise</li>
+            <li>So, we have to concentrate on people health and mortality</li>
+            <li>These chronic diseases are very challenging to the medical field with the help of doctors and analysts,
+                we can save many people’s lives and countries too</li>
+            <li>After 10 years, 2033 from now, we have to overcome this disease like before we overcome fever and other
+                historical diseases</li>
+            <li>Everyone has the responsibility to do something for our nation and in my part, I’ll give my full efforts
+                to improvise the medical field because without that infrastructure we personally or nationally can’t see
+                growth and life. Major things that are happening around us are invisibly connected to the medical field
+            </li>
+        </ul>
+        <div class="text" id="FE">6. Future enhancement</div>
+        <ul class="bullet-point">
+            <li>We have to include some more features like symptom mortality rate and testing results</li>
+            <li>Further we can make ML models for predicting the disease mortality</li>
+            <li>We can make a web app and deploy it in the cloud so that it may help doctors and peoples who don’t know
+                the data science concept</li>
+            <li>We have to collect more data from various countries</li>
+            <li>With the help of a web app we can collect patients report and store them in the database</li>
+            <li>From the database we can connect and do analysis with the help of Big data concept</li>
+            <li>We can do this all together to make automation from collection to deployment and display the results
+            </li>
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="text" id="REF">7. Reference</div>
+        <p>text here</p>
+
+
+    </section>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
+
+        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
+
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+            }
+        }
+    </script>
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+    </script>
+</body>
+
+</html>
